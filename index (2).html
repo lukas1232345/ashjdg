@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비바스의 삼각관계</title>
+  <!-- 모던한 폰트 Roboto 적용 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      /* 135도 방향의 부드러운 그라디언트 배경 */
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>비바스와 시그마와 장티의 삼각관계</h1>
+
+  <div class="gallery">
+    <!-- 기존 이미지들 -->
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339557353648951336/2024-12-01_190100.png?ex=67af2780&is=67add600&hm=c842f28ed55d7e365618ae754d1109de6c2743cb66bcc1711912755cb35b6906" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339557353648951336/2024-12-01_190100.png?ex=67af2780&is=67add600&hm=c842f28ed55d7e365618ae754d1109de6c2743cb66bcc1711912755cb35b6906" alt="사진 1">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339522534667976727/1733626417939.png?ex=67af0713&is=67adb593&hm=0b3a00ff968eac8bdd05686f9da656e643e968c870a927ddcf522b86b9c4503a" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339522534667976727/1733626417939.png?ex=67af0713&is=67adb593&hm=0b3a00ff968eac8bdd05686f9da656e643e968c870a927ddcf522b86b9c4503a" alt="사진 2">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339522281768222720/636587f980e3f4cd.png?ex=67af06d7&is=67adb557&hm=83576be05bb11afef70223f48d9432523bbdc55ab506f4db74c8e1c4d8cf53a5" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339522281768222720/636587f980e3f4cd.png?ex=67af06d7&is=67adb557&hm=83576be05bb11afef70223f48d9432523bbdc55ab506f4db74c8e1c4d8cf53a5" alt="사진 3">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282384785408/Screenshot_20241208_220315_Discord.jpg?ex=67af06d7&is=67adb557&hm=0b2f849ce89714bbf40e68fb1f8ead368698f5d9fa98a19c4ff831f8b881b0cb" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282384785408/Screenshot_20241208_220315_Discord.jpg?ex=67af06d7&is=67adb557&hm=0b2f849ce89714bbf40e68fb1f8ead368698f5d9fa98a19c4ff831f8b881b0cb" alt="사진 4">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282649030687/Screenshot_20241112_000140_Discord.jpg?ex=67af06d7&is=67adb557&hm=908853fe4030fd39633d35df1f0d7b5cbdc31cfe615d9e382e0ee2045e6da5e5" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282649030687/Screenshot_20241112_000140_Discord.jpg?ex=67af06d7&is=67adb557&hm=908853fe4030fd39633d35df1f0d7b5cbdc31cfe615d9e382e0ee2045e6da5e5" alt="사진 5">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282854289468/20241112_000023.jpg?ex=67af06d7&is=67adb557&hm=d05cb72475bb99a9508a0167a16d3625c3f7ac850d0e41fdf300682168a91d87" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339522282854289468/20241112_000023.jpg?ex=67af06d7&is=67adb557&hm=d05cb72475bb99a9508a0167a16d3625c3f7ac850d0e41fdf300682168a91d87" alt="사진 6">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339566361470570526/2025-01-18_200049.png?ex=67af2fe4&is=67adde64&hm=ce9791e3e10ff743410427e288dbf5fa0e889cda62558f737b83144e9a183be8" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339566361470570526/2025-01-18_200049.png?ex=67af2fe4&is=67adde64&hm=ce9791e3e10ff743410427e288dbf5fa0e889cda62558f737b83144e9a183be8" alt="사진 7">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339566361986338818/2025-01-23_195945.png?ex=67af2fe4&is=67adde64&hm=dec82131197a1ee8394de08f3c3d85ba8c8f943aa6c79e85e7483c8e971cadca" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339566361986338818/2025-01-23_195945.png?ex=67af2fe4&is=67adde64&hm=dec82131197a1ee8394de08f3c3d85ba8c8f943aa6c79e85e7483c8e971cadca" alt="사진 8">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://media.discordapp.net/attachments/1311331564831117386/1339510335018893424/2024-12-30_205319.png?ex=67aefbb6&is=67adaa36&hm=004884fdd86dbf9e82fa46fff9fe9081458faf92eec70658abf2b7ca0b098ad8&=&format=webp&quality=lossless" download>
+        <img src="https://media.discordapp.net/attachments/1311331564831117386/1339510335018893424/2024-12-30_205319.png?ex=67aefbb6&is=67adaa36&hm=004884fdd86dbf9e82fa46fff9fe9081458faf92eec70658abf2b7ca0b098ad8&=&format=webp&quality=lossless" alt="사진 9">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339571998929584219/2025-01-18_222417.png?ex=67af3524&is=67ade3a4&hm=f14f810c9eb5d236920e041f2de416c4ca26416263e504b6fdc3da2b9da88deb" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339571998929584219/2025-01-18_222417.png?ex=67af3524&is=67ade3a4&hm=f14f810c9eb5d236920e041f2de416c4ca26416263e504b6fdc3da2b9da88deb" alt="사진 10">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339571999193956394/2025-01-18_222839.png?ex=67af3524&is=67ade3a4&hm=a31e53c5310adbae639e0a4ec1d8cce975bd33190aa8eff8cc20686767251c67" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339571999193956394/2025-01-18_222839.png?ex=67af3524&is=67ade3a4&hm=a31e53c5310adbae639e0a4ec1d8cce975bd33190aa8eff8cc20686767251c67" alt="사진 11">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339571999483101277/2025-01-17_214250.png?ex=67af3524&is=67ade3a4&hm=241d24ca20d6b4a10156fcdfd402b92f40f3602d5b4ccb537f8ab9b9c195bcbc" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339571999483101277/2025-01-17_214250.png?ex=67af3524&is=67ade3a4&hm=241d24ca20d6b4a10156fcdfd402b92f40f3602d5b4ccb537f8ab9b9c195bcbc" alt="사진 12">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339572910628671538/Desktop_Screenshot_2024.12.15_-_17.00.48.34.png?ex=67af35fd&is=67ade47d&hm=c93342c706a19c09a82b6f492c169bb8fbb8661e83a88933ef17ee12fb100f96" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339572910628671538/Desktop_Screenshot_2024.12.15_-_17.00.48.34.png?ex=67af35fd&is=67ade47d&hm=c93342c706a19c09a82b6f492c169bb8fbb8661e83a88933ef17ee12fb100f96" alt="사진 13">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339572910985183263/Desktop_Screenshot_2024.10.17_-_20.29.15.01.png?ex=67af35fe&is=67ade47e&hm=0dbd9e495de3839683564ca35651ec6fc98f0e9a8036b8eb76a848184d252ed0" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339572910985183263/Desktop_Screenshot_2024.10.17_-_20.29.15.01.png?ex=67af35fe&is=67ade47e&hm=0dbd9e495de3839683564ca35651ec6fc98f0e9a8036b8eb76a848184d252ed0" alt="사진 14">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339572911425589288/Desktop_Screenshot_2024.12.27_-_20.28.22.50.png?ex=67af35fe&is=67ade47e&hm=5ccc23ade0e94850c1ea2b2042c220fd2b2057c515c49f16ae5a8dc6e453ee6c" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339572911425589288/Desktop_Screenshot_2024.12.27_-_20.28.22.50.png?ex=67af35fe&is=67ade47e&hm=5ccc23ade0e94850c1ea2b2042c220fd2b2057c515c49f16ae5a8dc6e453ee6c" alt="사진 15">
+      </a>
+    </div>
+
+    <!-- 추가된 이미지들 (사진 16 ~ 사진 29) -->
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1304779754607480863/1304780344301715506/e3d3fb0d49efbbac.png?ex=67ae8a23&is=67ad38a3&hm=c16c515ee1c5d02630037dabb881f0f3570db4ec78800175cdb22b8c643938ee" download>
+        <img src="https://cdn.discordapp.com/attachments/1304779754607480863/1304780344301715506/e3d3fb0d49efbbac.png?ex=67ae8a23&is=67ad38a3&hm=c16c515ee1c5d02630037dabb881f0f3570db4ec78800175cdb22b8c643938ee" alt="사진 16">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339521347524755507/2025-02-08_122239.png?ex=67af05f8&is=67adb478&hm=ecbd8a8b335355ace2d4ac19dc10d0e2d26893174dd58d0b53a5082493e2e734" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339521347524755507/2025-02-08_122239.png?ex=67af05f8&is=67adb478&hm=ecbd8a8b335355ace2d4ac19dc10d0e2d26893174dd58d0b53a5082493e2e734" alt="사진 17">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1317502179619377194/1339530216770633728/image.png?ex=67af0e3a&is=67adbcba&hm=d43470c16d8e08a908af49251e6760c36d3f8f3d5517b184483c2e28f1254695" download>
+        <img src="https://cdn.discordapp.com/attachments/1317502179619377194/1339530216770633728/image.png?ex=67af0e3a&is=67adbcba&hm=d43470c16d8e08a908af49251e6760c36d3f8f3d5517b184483c2e28f1254695" alt="사진 18">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577521259282545/Desktop_Screenshot_2024.10.19_-_15.13.49.85.png?ex=67af3a49&is=67ade8c9&hm=a0e1b83a51232669dd10ea905e2f857bb9c5d39982a49c55326b9d632ca169a8" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577521259282545/Desktop_Screenshot_2024.10.19_-_15.13.49.85.png?ex=67af3a49&is=67ade8c9&hm=a0e1b83a51232669dd10ea905e2f857bb9c5d39982a49c55326b9d632ca169a8" alt="사진 19">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577646841073787/Desktop_Screenshot_2024.11.30_-_15.25.09.80.png?ex=67af3a67&is=67ade8e7&hm=a73343ef9f9b64610b1867682f1fc619b9c395b7dfdd44355762da9e891203a4" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577646841073787/Desktop_Screenshot_2024.11.30_-_15.25.09.80.png?ex=67af3a67&is=67ade8e7&hm=a73343ef9f9b64610b1867682f1fc619b9c395b7dfdd44355762da9e891203a4" alt="사진 20">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577700775497821/Desktop_Screenshot_2024.11.30_-_19.28.10.39.png?ex=67af3a74&is=67ade8f4&hm=b70918d94f768b5f7254f2e2b09419b10c730673db4a3103f41b5328ae0ed8b2" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577700775497821/Desktop_Screenshot_2024.11.30_-_19.28.10.39.png?ex=67af3a74&is=67ade8f4&hm=b70918d94f768b5f7254f2e2b09419b10c730673db4a3103f41b5328ae0ed8b2" alt="사진 21">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577746279628852/Desktop_Screenshot_2024.12.03_-_21.34.31.48.png?ex=67af3a7e&is=67ade8fe&hm=5a367511f4a216c8485a33f8ce7c1f4450d2de4edbec2462e4049d1785a9ca90" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577746279628852/Desktop_Screenshot_2024.12.03_-_21.34.31.48.png?ex=67af3a7e&is=67ade8fe&hm=5a367511f4a216c8485a33f8ce7c1f4450d2de4edbec2462e4049d1785a9ca90" alt="사진 22">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577811584684067/Desktop_Screenshot_2025.01.13_-_19.41.42.96.png?ex=67af3a8e&is=67ade90e&hm=5e2dec74259d7f8ff83bf533dd66acf936cf825f9d7fc2124adbfe824421d43f" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577811584684067/Desktop_Screenshot_2025.01.13_-_19.41.42.96.png?ex=67af3a8e&is=67ade90e&hm=5e2dec74259d7f8ff83bf533dd66acf936cf825f9d7fc2124adbfe824421d43f" alt="사진 23">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339577879499116647/Desktop_Screenshot_2025.01.15_-_21.07.27.95.png?ex=67af3a9e&is=67ade91e&hm=24653ba92c2031b6b7d61d549e0a03cb97cbe4fcb5850c6d8a20c1fcd93a6328" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339577879499116647/Desktop_Screenshot_2025.01.15_-_21.07.27.95.png?ex=67af3a9e&is=67ade91e&hm=24653ba92c2031b6b7d61d549e0a03cb97cbe4fcb5850c6d8a20c1fcd93a6328" alt="사진 24">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339578004929777757/Desktop_Screenshot_2025.01.14_-_20.28.13.55.png?ex=67af3abc&is=67ade93c&hm=5954dfb320a727dc745979ee87406e011043e1c775a5f281d138df0262e9e42e" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339578004929777757/Desktop_Screenshot_2025.01.14_-_20.28.13.55.png?ex=67af3abc&is=67ade93c&hm=5954dfb320a727dc745979ee87406e011043e1c775a5f281d138df0262e9e42e" alt="사진 25">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339578048269254718/Desktop_Screenshot_2025.01.14_-_20.32.26.31.png?ex=67af3ac6&is=67ade946&hm=f4b8ba8dbaa30d20706c03a99e30d2b66d57df16d6731754e71fff18cf93a420" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339578048269254718/Desktop_Screenshot_2025.01.14_-_20.32.26.31.png?ex=67af3ac6&is=67ade946&hm=f4b8ba8dbaa30d20706c03a99e30d2b66d57df16d6731754e71fff18cf93a420" alt="사진 26">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339578567939461202/2025-01-24_213734.png?ex=67af3b42&is=67ade9c2&hm=c878dcba309742ed7086bdf9ef37056d9d710e9d0d5abde3c6f32a88affaec34" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339578567939461202/2025-01-24_213734.png?ex=67af3b42&is=67ade9c2&hm=c878dcba309742ed7086bdf9ef37056d9d710e9d0d5abde3c6f32a88affaec34" alt="사진 27">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339578452927451267/2024-12-28_224027.png?ex=67af3b27&is=67ade9a7&hm=54232cec44686964888809e85740f59f044efb839d1cd93c21d3ee33d786346b" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339578452927451267/2024-12-28_224027.png?ex=67af3b27&is=67ade9a7&hm=54232cec44686964888809e85740f59f044efb839d1cd93c21d3ee33d786346b" alt="사진 28">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339578716967276585/2025-01-31_153144.png?ex=67af3b66&is=67ade9e6&hm=87e64e696604fa203bb8a0eda7f8896bdd637def17ff2b33e649f0d369bb8db1" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339578716967276585/2025-01-31_153144.png?ex=67af3b66&is=67ade9e6&hm=87e64e696604fa203bb8a0eda7f8896bdd637def17ff2b33e649f0d369bb8db1" alt="사진 29">
+      </a>
+    </div>
+
+    <!-- 새로 추가된 이미지들 -->
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339588197935485011/2025-01-19_175051.png?ex=67af443a&is=67adf2ba&hm=17b7132db15a12fe7a2970ca60031066303ec51c56df657d2a4b7a89ba169935&" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339588197935485011/2025-01-19_175051.png?ex=67af443a&is=67adf2ba&hm=17b7132db15a12fe7a2970ca60031066303ec51c56df657d2a4b7a89ba169935&" alt="사진 30">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339588701814128731/Screenshot_20241128_163120_Discord.jpg?ex=67af44b2&is=67adf332&hm=12554d1ee46732783d4b022157153e4fce61f73bce0c811c159860cdcc905f98&" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339588701814128731/Screenshot_20241128_163120_Discord.jpg?ex=67af44b2&is=67adf332&hm=12554d1ee46732783d4b022157153e4fce61f73bce0c811c159860cdcc905f98&" alt="사진 31">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339589020400881779/Screenshot_20241128_184112_Discord.jpg?ex=67af44fe&is=67adf37e&hm=4ae322a3fd881d885f2255b54995f0adb52d4a621b46ded15f100747aea5675d&" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339589020400881779/Screenshot_20241128_184112_Discord.jpg?ex=67af44fe&is=67adf37e&hm=4ae322a3fd881d885f2255b54995f0adb52d4a621b46ded15f100747aea5675d&" alt="사진 32">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="https://cdn.discordapp.com/attachments/1311331564831117386/1339589106656870491/Screenshot_20241129_220351_Discord.jpg?ex=67af4513&is=67adf393&hm=d0383f01baf1fe664f7c69cb2a30b496db663c468782a1a43fc6430be2bea08c&" download>
+        <img src="https://cdn.discordapp.com/attachments/1311331564831117386/1339589106656870491/Screenshot_20241129_220351_Discord.jpg?ex=67af4513&is=67adf393&hm=d0383f01baf1fe664f7c69cb2a30b496db663c468782a1a43fc6430be2bea08c&" alt="사진 33">
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
